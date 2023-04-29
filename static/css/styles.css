@@ -57,6 +57,9 @@ body {
     max-width: 450px;
     margin: 0 auto;
     padding: 0 20px;
+    flex: 1;
+    /* Set a minimum height equal to the height of the viewport */
+    min-height: 100vh;
 }
 
 .form {
@@ -121,7 +124,7 @@ body {
     border-top: 4px black;
     color: white;
     font-size: 12px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

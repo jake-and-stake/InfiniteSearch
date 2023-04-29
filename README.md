@@ -16,3 +16,5 @@ Run on Ubuntu
 3. 
 
 
+## Troubleshooting
+- Check that your IP address is added to cloud.mongodb.com. Go to The Network Access section
