@@ -4,3 +4,8 @@ __pycache__
 .ec2_instructions
 .notes
 notes
+client_secret.json
+
+# Session Data
+flask_session
+session_data
