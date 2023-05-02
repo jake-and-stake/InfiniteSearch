@@ -3,6 +3,7 @@ pymongo[srv]
 certifi
 python-dotenv
 gunicorn
+flask-session
 
 # Version Notes
 #     certifi==2022.12.7
