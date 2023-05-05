@@ -5,6 +5,7 @@ __pycache__
 .notes
 notes
 client_secret.json
+*.pem
 
 # Session Data
 flask_session

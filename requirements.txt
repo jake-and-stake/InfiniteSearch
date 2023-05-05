@@ -4,6 +4,7 @@ certifi
 python-dotenv
 gunicorn
 flask-session
+pyopenssl
 
 # Version Notes
 #     certifi==2022.12.7
