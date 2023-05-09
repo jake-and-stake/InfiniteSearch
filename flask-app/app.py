@@ -25,12 +25,6 @@ SESSION_FILE_DIR = "./session_data"
 
 def create_app():
     app = Flask(__name__)
-
-#     context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-#     context.load_cert_chain('server.pem')
-#     app.ssl_context = context
-
-    # app.run(ssl_context="adhoc")
     
     if not os.path.exists(SESSION_FILE_DIR):
         os.makedirs(SESSION_FILE_DIR)
@@ -88,11 +82,3 @@ def create_app():
         return render_template('login.html')
 
     return app
-
-# if __name__ == "__main__":
-#     app = create_app()
-#     context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-#     context.load_cert_chain('server.pem')
-#     app.ssl_context = context
-
-    # app.run(ssl_context="adhoc")

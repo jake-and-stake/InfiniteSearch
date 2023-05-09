@@ -6,11 +6,9 @@ services:
     hostname: nginx
     container_name: nginx
     ports:
-      - "8080:80" # binds localhost port 8080 to 80
-      # - "8443:443"
-      # - "80:80", "443:443"
-    # volumes:
-    #   - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - "80:80" # localhost port 80 to container port 80
+      - "443:443"
+      # - "8080:80" # binds localhost port 8080 to 80 (used for testing)
     depends_on:
       - gunicorn-flask
     networks:
@@ -22,8 +20,8 @@ services:
     build: ./flask-app
     hostname: gunicorn-flask
     container_name: gunicorn-flask
-    ports:
-      - "8000:5000"
+    # ports:
+    #   - "8000:5000"
     networks:
       - my-network
 
@@ -31,6 +29,3 @@ networks:
   my-network:
     ipam:
       driver: default
-
-    # - "8081:443" # binds localhost port 8081 to 443
-  # restart: always 
