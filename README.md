@@ -44,3 +44,10 @@ Runs the website InfiniteSearch.
 Local Machine Installs
 docker
 docker-compose
+
+## AWS EC2 install/run instructions
+- `sudo yum install python3-pip`
+- `sudo systemctl enable docker.service`
+- `sudo systemctl start docker.service`
+- `pip3 install docker-compose`
+- `docker-compose up --build-d`

@@ -6,7 +6,7 @@ __pycache__
 notes
 client_secret.json
 *.pem
-
+*.zip
 # Session Data
 flask_session
 session_data
